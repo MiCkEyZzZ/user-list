@@ -1,13 +1,13 @@
-import { PlusIcon } from '@heroicons/react/20/solid'
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import { PlusIcon } from '@heroicons/react/20/solid'
 
 import { useThunk } from '../hooks'
 import { fetchUsers, addUser } from '../store'
-import { UserListItem, UserLoader } from './index'
+import { UserItem, UserLoader } from './index'
 import { Button, ErrorMessage } from './ui'
 
-function UserList () {
+function UsersList () {
   const [getUsers, isLoadingUsers, loadingUsersError] = useThunk(fetchUsers)
   const [createUser, isCreatingUser, creatingUserError] = useThunk(addUser)
   const { data } = useSelector((state) => state.users)
@@ -25,7 +25,7 @@ function UserList () {
   }
 
   if (loadingUsersError) {
-    return <ErrorMessage />
+    return <ErrorMessage text='Ошибка получения данных...' />
   }
 
   return (
@@ -37,7 +37,7 @@ function UserList () {
         <div className='flex items-center'>
           <Button
             loading={isCreatingUser}
-            className='w-[125px] hover:bg-gray-100 py-3 border border-black hover:border-gray-100'
+            className='w-[125px] text-white bg-black hover:bg-gray-600 py-3 border border-black hover:border-gray-600'
             onClick={handleUserAdd}
           >
             <PlusIcon className='w-4 h-4 mr-2' />
@@ -49,7 +49,7 @@ function UserList () {
       <div className='w-full h-[500px] py-5'>
         <ul className='flex flex-col w-full'>
           {data.map((user) => (
-            <UserListItem key={user.id} user={user} />
+            <UserItem key={user.id} user={user} />
           ))}
         </ul>
       </div>
@@ -57,4 +57,4 @@ function UserList () {
   )
 }
 
-export default UserList
+export default UsersList

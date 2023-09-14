@@ -1,6 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit'
+import axios from 'axios'
+import { faker } from '@faker-js/faker/locale/ru'
+import { createAsyncThunk } from '@reduxjs/toolkit'
 
-const addUserSlice = createSlice({
-  name: 'users/add',
-  initialState: {}
+const addUser = createAsyncThunk('users/add', async () => {
+  const response = await axios.post('http://localhost:3001/users', {
+    name: faker.person.fullName()
+  })
+
+  return response.data
 })
+
+export { addUser }

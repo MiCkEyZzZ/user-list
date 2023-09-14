@@ -1,0 +1,151 @@
+{
+  "users": [
+    {
+      "name": "Ситников Матвей",
+      "id": 1
+    },
+    {
+      "name": "Сорокина Евгения",
+      "id": 5
+    },
+    {
+      "name": "Дроздов Андрей",
+      "id": 6
+    },
+    {
+      "name": "Никон Федоров",
+      "id": 8
+    },
+    {
+      "name": "Алла Мишина",
+      "id": 10
+    },
+    {
+      "name": "Ангелина Ершова",
+      "id": 11
+    },
+    {
+      "name": "Полина Копылова",
+      "id": 12
+    }
+  ],
+  "albums": [
+    {
+      "userId": 6,
+      "title": "Кипр",
+      "id": 10
+    },
+    {
+      "userId": 10,
+      "title": "Великобритания",
+      "id": 12
+    },
+    {
+      "userId": 11,
+      "title": "Соломоновы Острова",
+      "id": 13
+    },
+    {
+      "userId": 12,
+      "title": "Республика Конго",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Литва",
+      "id": 15
+    },
+    {
+      "userId": 5,
+      "title": "Кыргызстан",
+      "id": 16
+    },
+    {
+      "userId": 8,
+      "title": "Иордания",
+      "id": 17
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=692057611960320",
+      "id": 15
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=4249954956607488",
+      "id": 16
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3317009028743168",
+      "id": 17
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3227673568477184",
+      "id": 18
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7379662925725696",
+      "id": 19
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5110571579998208",
+      "id": 20
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1305568570507264",
+      "id": 21
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2310146768240640",
+      "id": 22
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8030116238065664",
+      "id": 23
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6892008211742720",
+      "id": 25
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8669308215361536",
+      "id": 26
+    },
+    {
+      "albumId": 13,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7001213918773248",
+      "id": 28
+    },
+    {
+      "albumId": 13,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5789603395010560",
+      "id": 29
+    },
+    {
+      "albumId": 13,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5385928853946368",
+      "id": 30
+    },
+    {
+      "albumId": 15,
+      "url": "https://loremflickr.com/150/150/abstract?lock=375655378190336",
+      "id": 31
+    },
+    {
+      "albumId": 16,
+      "url": "https://loremflickr.com/150/150/abstract?lock=585783096377344",
+      "id": 33
+    }
+  ]
+}
